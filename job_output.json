@@ -1,0 +1,302 @@
+{
+  "createTime": "2022-12-10T13:22:49Z",
+  "endTime": "2022-12-10T14:03:41Z",
+  "etag": "MwWCYkwgWC4=",
+  "jobId": "project_6_trial_1_1210_1322",
+  "jobPosition": "0",
+  "startTime": "2022-12-10T13:22:53Z",
+  "state": "SUCCEEDED",
+  "trainingInput": {
+    "hyperparameters": {
+      "enableTrialEarlyStopping": true,
+      "goal": "MINIMIZE",
+      "hyperparameterMetricTag": "nyc_fare",
+      "maxParallelTrials": 3,
+      "maxTrials": 15,
+      "params": [
+        {
+          "maxValue": 10.0,
+          "minValue": 4.0,
+          "parameterName": "max_depth",
+          "type": "INTEGER"
+        },
+        {
+          "maxValue": 0.3,
+          "minValue": 0.001,
+          "parameterName": "learning_rate",
+          "type": "DOUBLE"
+        },
+        {
+          "maxValue": 1.0,
+          "parameterName": "subsample",
+          "type": "DOUBLE"
+        },
+        {
+          "maxValue": 1.0,
+          "parameterName": "colsample_bytree",
+          "type": "DOUBLE"
+        }
+      ]
+    },
+    "jobDir": "gs://ml-fare-prediction-371004/",
+    "masterType": "standard",
+    "packageUris": [
+      "gs://ml-fare-prediction-371004/packages/707a6e167778b39e09ba99477be1ea407a76192da499fa05c12f0f17a1d63858/ai_platform_trainer-0.1.tar.gz"
+    ],
+    "pythonModule": "ai_platform_trainer.train",
+    "pythonVersion": "3.7",
+    "region": "us-east1",
+    "runtimeVersion": "2.4",
+    "scaleTier": "CUSTOM",
+    "workerCount": "8",
+    "workerType": "standard"
+  },
+  "trainingOutput": {
+    "completedTrialCount": "15",
+    "consumedMLUnits": 8.72,
+    "hyperparameterMetricTag": "nyc_fare",
+    "isHyperparameterTuningJob": true,
+    "trials": [
+      {
+        "endTime": "2022-12-10T13:35:42Z",
+        "finalMetric": {
+          "objectiveValue": 3.9151373508568277,
+          "trainingStep": "1"
+        },
+        "hyperparameters": {
+          "colsample_bytree": "0.51483444327179917",
+          "learning_rate": "0.21715871820282884",
+          "max_depth": "9",
+          "subsample": "0.72383822558217115"
+        },
+        "startTime": "2022-12-10T13:22:59.760715598Z",
+        "state": "SUCCEEDED",
+        "trialId": "3"
+      },
+      {
+        "endTime": "2022-12-10T13:47:17Z",
+        "finalMetric": {
+          "objectiveValue": 3.9657456448046577,
+          "trainingStep": "1"
+        },
+        "hyperparameters": {
+          "colsample_bytree": "0.21622387257031173",
+          "learning_rate": "0.21557980350100758",
+          "max_depth": "8",
+          "subsample": "0.21603507139065567"
+        },
+        "startTime": "2022-12-10T13:46:00.281755449Z",
+        "state": "SUCCEEDED",
+        "trialId": "8"
+      },
+      {
+        "endTime": "2022-12-10T13:47:43Z",
+        "finalMetric": {
+          "objectiveValue": 4.059846921393279,
+          "trainingStep": "1"
+        },
+        "hyperparameters": {
+          "colsample_bytree": "0.78674753538421327",
+          "learning_rate": "0.24097617877882024",
+          "max_depth": "10",
+          "subsample": "0.99582863131070409"
+        },
+        "startTime": "2022-12-10T13:46:00.281579865Z",
+        "state": "SUCCEEDED",
+        "trialId": "7"
+      },
+      {
+        "endTime": "2022-12-10T13:41:09Z",
+        "finalMetric": {
+          "objectiveValue": 4.090768208630643,
+          "trainingStep": "1"
+        },
+        "hyperparameters": {
+          "colsample_bytree": "0.26689250013376631",
+          "learning_rate": "0.29130023912743724",
+          "max_depth": "10",
+          "subsample": "0.97179085917535546"
+        },
+        "startTime": "2022-12-10T13:40:06.179810562Z",
+        "state": "SUCCEEDED",
+        "trialId": "5"
+      },
+      {
+        "endTime": "2022-12-10T13:59:09Z",
+        "finalMetric": {
+          "objectiveValue": 4.094291127090748,
+          "trainingStep": "1"
+        },
+        "hyperparameters": {
+          "colsample_bytree": "0.40255075425071363",
+          "learning_rate": "0.11930379773184445",
+          "max_depth": "9",
+          "subsample": "0.73351773047377178"
+        },
+        "startTime": "2022-12-10T13:57:48.297779707Z",
+        "state": "SUCCEEDED",
+        "trialId": "14"
+      },
+      {
+        "endTime": "2022-12-10T13:47:17Z",
+        "finalMetric": {
+          "objectiveValue": 4.1501688819441105,
+          "trainingStep": "1"
+        },
+        "hyperparameters": {
+          "colsample_bytree": "0.44244500230615347",
+          "learning_rate": "0.2075727575391515",
+          "max_depth": "10",
+          "subsample": "0.999999999999381"
+        },
+        "startTime": "2022-12-10T13:46:00.281833846Z",
+        "state": "SUCCEEDED",
+        "trialId": "9"
+      },
+      {
+        "endTime": "2022-12-10T13:52:56Z",
+        "finalMetric": {
+          "objectiveValue": 4.1875920072098305,
+          "trainingStep": "1"
+        },
+        "hyperparameters": {
+          "colsample_bytree": "0.57074061728323422",
+          "learning_rate": "0.22666075679702097",
+          "max_depth": "8",
+          "subsample": "0.34997460914541151"
+        },
+        "startTime": "2022-12-10T13:51:52.740035335Z",
+        "state": "SUCCEEDED",
+        "trialId": "10"
+      },
+      {
+        "endTime": "2022-12-10T13:40:41Z",
+        "finalMetric": {
+          "objectiveValue": 4.227463152074591,
+          "trainingStep": "1"
+        },
+        "hyperparameters": {
+          "colsample_bytree": "0.0069249212241983072",
+          "learning_rate": "0.3",
+          "max_depth": "9",
+          "subsample": "0.91740872405655283"
+        },
+        "startTime": "2022-12-10T13:40:07.687941516Z",
+        "state": "SUCCEEDED",
+        "trialId": "6"
+      },
+      {
+        "endTime": "2022-12-10T13:59:13Z",
+        "finalMetric": {
+          "objectiveValue": 4.23177446414107,
+          "trainingStep": "1"
+        },
+        "hyperparameters": {
+          "colsample_bytree": "0.6478566791117677",
+          "learning_rate": "0.3",
+          "max_depth": "10",
+          "subsample": "0.792951505743848"
+        },
+        "startTime": "2022-12-10T13:57:48.297599461Z",
+        "state": "SUCCEEDED",
+        "trialId": "13"
+      },
+      {
+        "endTime": "2022-12-10T13:53:25Z",
+        "finalMetric": {
+          "objectiveValue": 4.251953349290876,
+          "trainingStep": "1"
+        },
+        "hyperparameters": {
+          "colsample_bytree": "0.73032612582342427",
+          "learning_rate": "0.215566721211704",
+          "max_depth": "8",
+          "subsample": "0.3878990252219231"
+        },
+        "startTime": "2022-12-10T13:51:54.224239155Z",
+        "state": "SUCCEEDED",
+        "trialId": "12"
+      },
+      {
+        "endTime": "2022-12-10T13:41:07Z",
+        "finalMetric": {
+          "objectiveValue": 4.272022857004804,
+          "trainingStep": "1"
+        },
+        "hyperparameters": {
+          "colsample_bytree": "0.75080537310745976",
+          "learning_rate": "0.16514645401603725",
+          "max_depth": "9",
+          "subsample": "0.5745435117297516"
+        },
+        "startTime": "2022-12-10T13:40:04.694515731Z",
+        "state": "SUCCEEDED",
+        "trialId": "4"
+      },
+      {
+        "endTime": "2022-12-10T13:58:55Z",
+        "finalMetric": {
+          "objectiveValue": 4.289774406565981,
+          "trainingStep": "1"
+        },
+        "hyperparameters": {
+          "colsample_bytree": "0.92681769893333543",
+          "learning_rate": "0.29951281621059178",
+          "max_depth": "9",
+          "subsample": "0"
+        },
+        "startTime": "2022-12-10T13:58:22.058784918Z",
+        "state": "SUCCEEDED",
+        "trialId": "15"
+      },
+      {
+        "endTime": "2022-12-10T13:35:41Z",
+        "finalMetric": {
+          "objectiveValue": 4.338727283819458,
+          "trainingStep": "1"
+        },
+        "hyperparameters": {
+          "colsample_bytree": "0.71050560617089409",
+          "learning_rate": "0.0873235825567003",
+          "max_depth": "8",
+          "subsample": "0.34210240097547173"
+        },
+        "startTime": "2022-12-10T13:22:59.760674918Z",
+        "state": "SUCCEEDED",
+        "trialId": "2"
+      },
+      {
+        "endTime": "2022-12-10T13:35:42Z",
+        "finalMetric": {
+          "objectiveValue": 4.350414405463872,
+          "trainingStep": "1"
+        },
+        "hyperparameters": {
+          "colsample_bytree": "0.5",
+          "learning_rate": "0.1505",
+          "max_depth": "7",
+          "subsample": "0.5"
+        },
+        "startTime": "2022-12-10T13:22:59.760563574Z",
+        "state": "SUCCEEDED",
+        "trialId": "1"
+      },
+      {
+        "endTime": "2022-12-10T13:52:56Z",
+        "finalMetric": {
+          "objectiveValue": 4.3530233728687024,
+          "trainingStep": "1"
+        },
+        "hyperparameters": {
+          "colsample_bytree": "0",
+          "learning_rate": "0.21330523968623177",
+          "max_depth": "9",
+          "subsample": "1"
+        },
+        "startTime": "2022-12-10T13:51:52.740234483Z",
+        "state": "SUCCEEDED",
+        "trialId": "11"
+      }
+    ]
+  }
+}
